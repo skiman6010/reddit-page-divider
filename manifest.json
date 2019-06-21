@@ -1,0 +1,17 @@
+{
+    "name": "Reddit Page Dividers",
+    "version": "1.0",
+    "description": "Adds page numbers and dividers to Reddit.",
+    "permissions": ["activeTab"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.reddit.com/*"],
+            "js": ["scroll-divider.js"]
+        }
+    ],
+    "manifest_version": 2
+  }
